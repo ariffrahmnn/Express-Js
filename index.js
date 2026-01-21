@@ -6,6 +6,14 @@ app.get("/", (req, res) => {
     res.send("<h1>hello, express!</h1>");
 })
 
+app.get("/contact", (req, res) => {
+    res.send("<h1>hello, this is my contact section</h1>");
+})
+
+app.get("/about", (req, res) => {
+    res.send("<h1>hello, this is my about section</h1>");
+})
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 })
